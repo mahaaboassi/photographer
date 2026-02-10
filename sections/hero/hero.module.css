@@ -1,0 +1,19 @@
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
