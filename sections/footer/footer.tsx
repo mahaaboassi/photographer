@@ -38,7 +38,7 @@ const Footer = ()=>{
             </div>
             <div className="border-l-2  p-5 border-[var(--main)] flex flex-col justify-center gap-5">
                 <p className="italic text-xs md:text-sm lg:text-lg">
-                    “Sed non auctor magna. Nunc eu ultrices orci. Donec commodo ligula in massa ultricies volutpat. Fusce vel cursus lectus. Cras commodo odio mi, eu cursus nibh iaculis ut.”
+                    “Photography is the quiet language of light, where a single moment becomes a story that lives forever, holding time still so memories can breathe beyond the present.”
                 </p>
                 <div className="font-serif text-xl font-bold">Rebal Al Barouki</div>
 

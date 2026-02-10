@@ -3,7 +3,8 @@ import { Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/sections/navbar/nav";
 import Footer from "@/sections/footer/footer";
-import CallMeMobile from "@/components/callMe/callMe";
+import { ReduxProvider } from "./_app";
+import BookNow from "@/components/book/book";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -35,10 +36,13 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${playfair.variable} antialiased font-sans`}
       >
-        <Navbar/>
-        {children}
-        <Footer/>
-        <CallMeMobile/>
+        <ReduxProvider>
+            <Navbar/>
+            {children}
+            <Footer/>
+            <BookNow/>
+        </ReduxProvider>
+        
       </body>
     </html>
   );

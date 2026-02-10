@@ -69,7 +69,9 @@ const Navbar = () => {
               animate={scrolled ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 3* 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <button className="!text-sm md:!text-md">Book Now</button>
+              <Link href={`/book-session`}>
+                <button className="!text-sm md:!text-md lg:!text-xl">Book Now</button>
+              </Link>
             </motion.div>
         </div>
       </div>
