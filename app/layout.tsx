@@ -3,6 +3,7 @@ import { Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/sections/navbar/nav";
 import Footer from "@/sections/footer/footer";
+import CallMeMobile from "@/components/callMe/callMe";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <Footer/>
+        <CallMeMobile/>
       </body>
     </html>
   );

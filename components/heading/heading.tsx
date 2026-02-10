@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 type Props = {
   isCenter?: boolean;
   title: string;
+  secondTitle?: string
 };
 
-const Heading = ({ title, isCenter }: Props) => {
+const Heading = ({ title, isCenter, secondTitle }: Props) => {
   return (
     <div className="w-fit relative">
       <h2
@@ -17,6 +18,7 @@ const Heading = ({ title, isCenter }: Props) => {
         `}
       >
         {title}
+        <br/> <span className="text-[var(--main)]">{secondTitle}</span>
       </h2>
 
       {/* Luxury animated underline */}

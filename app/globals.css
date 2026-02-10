@@ -9,6 +9,7 @@
   --grey: #676767;
   --grey-2: #F5F5F5;
   --light: white;
+  --overlay: rgba(0, 0, 0, 0.673);
 }
 
 @theme inline {
@@ -46,6 +47,10 @@ button:hover{
 }
 button:hover svg path{
   fill: var(--main);
+}
+/* Popup */
+.popup{
+  background-color: rgba(0, 0, 0, 0.895);
 }
 @media (max-width:768px) {
   .arrow svg{

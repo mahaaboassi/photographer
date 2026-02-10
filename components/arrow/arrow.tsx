@@ -1,5 +1,5 @@
 type Props = {
-    isRotate : boolean
+    isRotate? : boolean
 }
 const Arrow = ({isRotate}:Props)=>{
     return( <div className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] md:w-[60px] md:h-[60px]  flex justify-center items-center arrow">

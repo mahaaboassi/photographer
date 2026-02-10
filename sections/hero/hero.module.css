@@ -17,3 +17,20 @@
     transform: translateY(-50%);
   }
 }
+.wrapperHorizon{
+  height: 100%;
+  overflow: hidden;
+}
+.imagesHorizon{
+  display: flex;
+  animation: scrollHorizon 15s linear infinite;
+}
+
+@keyframes scrollHorizon {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

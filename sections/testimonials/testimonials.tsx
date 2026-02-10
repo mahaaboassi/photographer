@@ -9,23 +9,23 @@ import { motion, AnimatePresence } from "framer-motion";
 const Testimonals = () => {
   const data = [
     {
-      image: "/images/maha.jpg",
+      image: "/images/profile_4.jpg",
       name: "Maha Abo Assi",
-      passion: "Wedding Client",
+      passion: "Model",
       rate: 5,
       review:
         "I honestly couldn’t have asked for a better photographer for our wedding day. Every special moment was captured beautifully and naturally without feeling forced. The team was extremely professional, friendly, and very patient with us and our families. The final photos were delivered on time and the quality was beyond what we expected. Looking at the album brings back every emotion from that day. I highly recommend this service to anyone looking for unforgettable memories."
     },
     {
-      image: "/images/maha.jpg",
-      name: "Sara Mahmoud",
-      passion: "Model",
+      image: "/images/profile_1.jpg",
+      name: "Rumi Mahmoud",
+      passion: "Wedding Client",
       rate: 4,
       review:
         "The photoshoot experience was smooth, comfortable, and very well organized from start to finish. I felt confident during the session thanks to the clear guidance and creative direction. The editing style was elegant and natural, which is exactly what I was hoping for. Communication was easy and professional throughout the whole process. I would definitely love to collaborate again on future projects."
     },
     {
-      image: "/images/maha.jpg",
+      image: "/images/profile_3.jpg",
       name: "Omar Hassan",
       passion: "Business Owner",
       rate: 5,
@@ -33,7 +33,7 @@ const Testimonals = () => {
         "Working together on our commercial product photography was one of the best decisions for our brand. The attention to detail, lighting quality, and overall presentation made our products look premium and professional. Since using the new images in our marketing, we’ve noticed a clear improvement in customer engagement and trust. The delivery was fast, organized, and exceeded our expectations in every way."
     },
     {
-      image: "/images/maha.jpg",
+      image: "/images/profile_2.jpg",
       name: "Lina Youssef",
       passion: "Event Client",
       rate: 5,
