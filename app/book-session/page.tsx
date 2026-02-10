@@ -6,7 +6,7 @@ const BookASession = ()=>{
       {/* Hero Section */}
       <div
         className="h-[500px] relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/bgbook.jpg')" }}
+        style={{ backgroundImage: "url('/images/bgBook.jpg')" }}
       >
         <div className="absolute inset-0 z-1 flex flex-col justify-center items-center gap-6 ">
             <Heading title="Book a Session" isCenter />
