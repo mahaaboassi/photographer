@@ -39,13 +39,15 @@ const Navbar = () => {
           }}
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Image
-            width={150}
-            height={100}
-            src="/logo.png"
-            alt="logo"
-            className="w-[80px] md:w-[100px] lg:w-[120px] h-fit"
-          />
+          <Link href={"/"}>
+            <Image
+              width={150}
+              height={100}
+              src="/logo.png"
+              alt="logo"
+              className="w-[80px] md:w-[100px] lg:w-[120px] h-fit"
+            />
+          </Link>
         </motion.div>
 
         {/* Navbar Links */}

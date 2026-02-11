@@ -33,9 +33,9 @@ const Footer = ()=>{
     }]
     return(<footer className="mb-16 sm:mb-0">
         <div className="bg-[var(--foreground)] text-[var(--background)] px-5 sm:px-10 md:px-20  md:gap-20 md:flex py-7 md:py-15">
-            <div>
+            <Link href={"/"}>
                 <Image width={150} height={100} className="w-[150px] md:w-[250px] h-fit" src={"/logo.png"} alt="logo" />
-            </div>
+            </Link>
             <div className="border-l-2  p-5 border-[var(--main)] flex flex-col justify-center gap-5">
                 <p className="italic text-xs md:text-sm lg:text-lg">
                     “Photography is the quiet language of light, where a single moment becomes a story that lives forever, holding time still so memories can breathe beyond the present.”
