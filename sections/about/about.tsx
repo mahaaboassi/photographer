@@ -10,7 +10,7 @@ const About = ()=>{
            <Heading title="Capturing Moments," secondTitle="Creating Memories" />
             <div className="flex flex-col md:items-start items-center gap-3">
                 <p className="text-md md:text-start text-center text-xs md:text-sm lg:text-lg">
-                    Hi, my name is Rebal Al Barouki. I am an expert professional photographer. For the past 10+ years, I've captured important moments for thousands of clients, from intimate portraits to grand weddings.
+                    Hi, my name is Rebal Alaa Al Barouki. I am an expert professional photographer. For the past 7+ years, I've captured important moments for handreds of clients, from intimate portraits to grand weddings.
                 </p>
                 <p className="text-md md:text-start text-center text-xs md:text-sm lg:text-lg">
                     My approach combines technical excellence with artistic vision, ensuring every shot tells a compelling story. I believe in creating images that evoke emotion and stand the test of time.
