@@ -29,7 +29,7 @@ const Navbar = () => {
         paddingBottom: scrolled ? "0px" : "20px",
       }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-0 left-0 right-0 z-[100] px-6 md:px-20"
+      className="fixed top-0 left-0 right-0 z-[100] px-4 sm:px-10 md:px-20"
     >
       <div className="flex items-center justify-between">
         {/* Animated Logo */}

@@ -13,8 +13,8 @@ const Heading = ({ title, isCenter, secondTitle }: Props) => {
     <div className="w-fit relative">
       <h2
         className={`
-          uppercase text-xl md:text-3xl lg:text-4xl font-serif font-semibold
-          ${isCenter ? "text-center mx-auto" : ""}
+          uppercase text-xl md:text-2xl lg:text-4xl font-serif font-semibold
+          ${isCenter ? "text-center mx-auto" : "text-center md:text-start"}
         `}
       >
         {title}
@@ -29,7 +29,7 @@ const Heading = ({ title, isCenter, secondTitle }: Props) => {
         viewport={{ once: true }}
         className={`
           absolute -bottom-2 h-[4px] bg-[var(--main)]
-          ${isCenter ? "left-1/2 -translate-x-1/2" : "left-0"}
+          ${isCenter ? "left-1/2 -translate-x-1/2" : "md:left-0 md:-translate-x-0 left-1/2 -translate-x-1/2"}
         `}
       />
     </div>

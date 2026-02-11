@@ -51,7 +51,9 @@ const Hero = () => {
           />
           
         </div>
-        <h2 className="font-serif absolute left-0 right-0 text-center text-xl md:text-3xl lg:text-5xl bottom-5 z-21 text-[var(--light)]">Photography that speaks without words</h2>
+        <h2 style={{lineHeight:"1.2rem"}} className="font-serif absolute left-0 right-0 text-center text-md sm:text-xl md:text-3xl lg:text-5xl bottom-5 z-21 text-[var(--light)] px-2 sm:px-10 md:px-20">
+          Photography that speaks without words
+        </h2>
       </div>
       {/* For Mobile Size */}
         <div className={`hidden ${Style.wrapperHorizon}`}>
