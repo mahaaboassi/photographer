@@ -1,6 +1,20 @@
 import BookSession from "@/components/book/bookSession"
 import Heading from "@/components/heading/heading"
 
+export const metadata = {
+  title: "Book a Photography Session | Rebal Al Barouki Photography",
+  description:
+    "Reserve your photography session today and explore our curated services designed to bring your vision to life.",
+  keywords: ["Photography", "Book a Session", "Photoshoot", "Photography Services"],
+  openGraph: {
+    title: "Book a Photography Session | Rebal Al Barouki",
+    description:
+      "Reserve your photography session today and explore our curated services designed to bring your vision to life.",
+    url: "https://rebalalbarouki.com/book-session",
+    type: "website",
+  },
+}
+
 const BookASession = ()=>{
     return(    <main className="bg-[var(--primary)] text-white flex flex-col">
       {/* Hero Section */}

@@ -134,8 +134,8 @@ const GalleryRow = ({
 /* ---------------- main gallery ---------------- */
 
 const Gallery = () => {
-  const imagesFirst = Array.from({ length: 15 }, (_, i) => `/images/gallery (${i + 1}).png`);
-  const imagesSecond = Array.from({ length: 15 }, (_, i) => `/images/gallery (${i + 16}).png`);
+  const imagesFirst = Array.from({ length: 15 }, (_, i) => `/images/gallery (${i + 1}).jpg`);
+  const imagesSecond = Array.from({ length: 15 }, (_, i) => `/images/gallery (${i + 16}).jpg`);
 
   const [firstIndex, setFirstIndex] = useState(3);
   const [secondIndex, setSecondIndex] = useState(3);

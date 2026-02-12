@@ -53,7 +53,7 @@ const Footer = ()=>{
                 {
                     data.map((e,idx)=>(<Link key={`Footer_${e.name}_${idx}`} href={e.link} aria-label={e.name} target="_blank">
                         <button className="!p-0">
-                            <div className="w-[35px] h-[35px] flex justify-center items-center">
+                            <div  aria-label={e.name} className="w-[35px] h-[35px] flex justify-center items-center">
                                 {e.icon}
                             </div>
                         </button>

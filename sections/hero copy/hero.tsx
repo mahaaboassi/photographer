@@ -1,33 +1,9 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import Image from "next/image";
+import Image from "next/image"
+import Style from "./hero.module.css"
 
 const Hero = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    let y = 0;
-    const speed = 0.5; // pixels per frame
-    const totalHeight = container.scrollHeight / 2; // first set of images
-
-    const animate = () => {
-      y -= speed;
-      if (Math.abs(y) >= totalHeight) {
-        y = 0; // reset seamlessly
-      }
-      container.style.transform = `translateY(${y}px)`;
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-  }, []);
-
   return (
-        <section>
+    <section>
       <div className="h-[450px] md:h-[500px] lg:h-[700px] relative overflow-hidden">
         {/* Background */}
         <Image
@@ -39,8 +15,8 @@ const Hero = () => {
         />
 
         {/* Scrolling container */}
-        <div className={`flex absolute top-0 right-5 md:right-20 z-10`}>
-          <div  ref={containerRef}>
+        <div className={`flex absolute top-0 right-5 md:right-20 z-10 ${Style.wrapper}`}>
+          <div className={Style.images}>
             {/* first copy */}
             <Image
               src="/images/strip_1.png"
@@ -50,24 +26,8 @@ const Hero = () => {
               className="w-[120px] sm:w-[200px] lg:w-[250px] xl:w-[350px]"
               priority
             />
-            <Image
-              src="/images/strip_2.png"
-              width={400}
-              height={1200}
-              className="w-[120px] sm:w-[200px] lg:w-[250px] xl:w-[350px]"
-              alt="Gallery clone"
-              priority
-            />
 
             {/* second copy (clone) */}
-            <Image
-              src="/images/strip_1.png"
-              width={400}
-              height={1200}
-              alt="Gallery"
-              className="w-[120px] sm:w-[200px] lg:w-[250px] xl:w-[350px]"
-              priority
-            />
             <Image
               src="/images/strip_2.png"
               width={400}
@@ -96,7 +56,7 @@ const Hero = () => {
         </h2>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
