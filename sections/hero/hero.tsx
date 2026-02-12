@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="h-[450px] md:h-[500px] lg:h-[700px] relative overflow-hidden">
         {/* Background */}
         <Image
-          src="/images/banner_large.jpg"
+          src="/images/banner.jpg"
           fill
           className="object-cover"
           priority
@@ -40,18 +40,18 @@ const Hero = () => {
         </div>
 
         {/* Cloud */}
-        <div className="absolute -bottom-7 md:-bottom-15 xl:-bottom-30 z-20 left-0 right-0">
+        <div className="absolute -bottom-15 xs:-bottom-30 sm:-bottom-45 md:-bottom-50 xl:-bottom-85 z-20 -left-20 -right-20">
           <Image
-            src="/images/cloud.png"
+            src="/images/blur.png"
             width={400}
             height={100}
-            className="w-full object-cover"
+            className="!w-full object-cover"
             priority
             alt="cloud"
           />
           
         </div>
-        <h2 style={{lineHeight:"1.2rem"}} className="font-serif absolute left-0 right-0 text-center text-md sm:text-xl md:text-3xl lg:text-5xl bottom-5 z-21 text-[var(--light)] px-2 sm:px-10 md:px-20">
+        <h2  className="uppercase font-serif absolute left-0 right-0 text-center text-sm sm:text-xl md:text-2xl lg:text-4xl bottom-5 z-21 text-[var(--light)] px-2 sm:px-10 md:px-20">
           Photography that speaks without words
         </h2>
       </div>
